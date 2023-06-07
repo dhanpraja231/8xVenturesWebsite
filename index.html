@@ -7,19 +7,18 @@
   <title>Responsive Navbar</title>
   <style>
 
-.navbar {
+    .navbar {
       position: fixed;
       top: -100px;
       left: 0;
       width: 100%;
-      height: 50px;
-      margin-top: 10px;
-      background-color: transparent;
+      
+      background-color: white;
       transition: top 0.3s ease-in-out;
     }
 
     .navbar.navbar-scrolled {
-      top: 5px;
+      top: 0px;
     }
   
     .navbar-toggler-icon{
@@ -71,6 +70,111 @@
       margin: auto;
     }
 
+    .main-content{
+      opacity: 0;
+    }
+
+    .main-content.main-content-scrolled{
+      opacity: 1;
+    }
+
+    .slides{
+      flex:1;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide-title{
+      opacity: 0;
+      animation: appear 1.5s ease-in-out forwards;
+      font-size: xx-large;
+      font-weight: bold;
+      
+      color: #565659;
+    }
+    .slide-subtitle{
+      opacity: 0;
+      animation: appear 2.0s ease-in-out forwards;
+      font-size: large;
+      
+      color: #565659;
+    }
+
+    a.footer-link-text{
+      text-decoration: underline;
+      color: #565659;
+      font-size: medium;
+    }
+
+    background-image-zoom {
+  animation: zoomAnimation 2s infinite alternate;
+}
+
+.social-media {
+  text-align: center;
+}
+
+/* Style for the social media icons */
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #555;
+}
+
+/* Example styles for different social media icons */
+.social-media .fa-facebook {
+  background-color: #3b5998;
+}
+
+.social-media .fa-twitter {
+  background-color: #1da1f2;
+}
+
+.social-media .fa-instagram {
+  background-color: #c13584;
+}
+
+.social-media .fa-linkedin {
+  background-color: #0077b5;
+}
+
+/* Define the animation */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the text */
+.appearing-text {
+  
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
 
     @keyframes mymove {
   from {background-color: #ffffff;}
@@ -95,11 +199,12 @@
     }
   }
 
+
   </style>
   
 
 </head>
-<body style="height: 1500px;">
+<body>
   
   <div class="splash" id="splash">
    
@@ -108,7 +213,7 @@
   </div>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+  <nav class="navbar navbar-expand-lg navbar-light " style="padding-top:20px ; padding-bottom: 20px;">
     <div class="container">
       <a class="navbar-brand navbar-logo" href="#"><img src="/ImageAssets/8X Logo High Resolution.png" alt="Company logo" width="180px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,14 +240,167 @@
       </div>
     </div>
   </nav>
+
+  <div class="main-content">
+    <div class="slideshow">
+      <div class="slides">
+        <div class="slide">
+          <div class="row">
+            <div class="col-md text-center background-image-zoom">
+              <img src="/ImageAssets/DeepTechEye.jpg
+              " alt="Slide 1"  style="object-fit: fill;width: 100%;height: auto;">
+            </div>
+            <div class="col-md text-center my-auto">
+                <div class="slide-title">
+                  <br/>
+                  Transforming visions into reality
+                </div><br/>
+
+                <div class="slide-subtitle ">
+                  Lorem ipsum alksdj akldsfa asdfdsf
+                  sdfsdfd dsfsdf wertery bcn
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row">
+            <div class="col-md text-center background-image-zoom">
+              <img src="/ImageAssets/DeepTechEye.jpg
+              " alt="Slide 1"  style="object-fit: fill;width: 100%;height: auto;">
+            </div>
+            <div class="col-md text-center my-auto">
+                <div class="slide-title">
+                  <br/>
+                  Transforming visions into reality 2
+                </div><br/>
+
+                <div class="slide-subtitle ">
+                  Lorem ipsum alksdj akldsfa asdfdsf
+                  sdfsdfd dsfsdf wertery bcn
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row">
+            <div class="col-md text-center background-image-zoom">
+              <img src="/ImageAssets/DeepTechEye.jpg
+              " alt="Slide 1"  style="object-fit: fill;width: 100%;height: auto;">
+            </div>
+            <div class="col-md text-center my-auto">
+                <div class="slide-title">
+                  <br/>
+                  Transforming visions into reality 3
+                </div><br/>
+
+                <div class="slide-subtitle ">
+                  Lorem ipsum alksdj akldsfa asdfdsf
+                  sdfsdfd dsfsdf wertery bcn
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="slide background-image-zoom">
+          <img src="https://loremflickr.com/640/400
+          " alt="Slide 2">
+        </div>
+        <div class="slide background-image-zoom">
+          <img src="https://loremflickr.com/640/410
+          " alt="Slide 3">
+        </div> -->
+      </div>
+    </div>
+    <hr>
+    <footer class="bg-light">
+      <div style="height: 20px;"></div>
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md text-center" style="padding: 10px;">
+            <a href="#" class="footer-link-text">Home</a>
+          </div>
+          <div class="col-md  text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Portfolio</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Team</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Newsroom</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Global VC Database</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Thought Publications</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Investor Login</a>
+          </div>
+        </div>
+        <div class="div" style="height: 20px;"></div>
+        <div class="social-media">
+          <!-- <a href="#" class="fa fa-facebook"></a> -->
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="div" style="height: 20px;"></div>
+        <div style="font-weight: bolder; text-align: center;">
+            8X Ventures
+        </div>
+        <div class="div" style="height: 20px;"></div>
+        <div style="text-align: center;">
+          Vision Tower - Al Khaleej Al Tejari 1 Street - Dubai - United Arab Emirates
+      </div>
+        <hr>
+        <div class="text-center">
+          <p>&copy; 2023 8x Ventures. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var slides = document.getElementsByClassName("slide");
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 8000); // Change slide every 3 seconds
+      }
+    });
+  </script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/2d28a88825.js" crossorigin="anonymous"></script>
+
   
   <!-- Include Bootstrap JS (popper.js and bootstrap.js) for the dropdown menu -->
   <script>
     window.addEventListener('scroll', function() {
       var navbar = document.querySelector('.navbar');
-      var scrolled = window.scrollY > 175;
+      var mainContent = document.querySelector('.main-content');
+      var scrolled = window.scrollY > 150;
       navbar.classList.toggle('navbar-scrolled', scrolled);
+      mainContent.classList.toggle('main-content-scrolled',scrolled)
     });
 
   var header = document.getElementById('splash');
@@ -157,11 +415,7 @@ function fadeOutOnScroll(element) {
   var scrollTop = document.documentElement.scrollTop;
   
   var opacity = 1;
-  
-  //if (scrollTop > distanceToTop) {
-    opacity = (1 - (scrollTop ) / elementHeight)*1;
-  //}
-  
+  opacity = (1 - (scrollTop ) / elementHeight)*0.7;
   if (opacity >= 0) {
     element.style.opacity = opacity;
   }

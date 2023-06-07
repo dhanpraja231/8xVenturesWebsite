@@ -3,6 +3,60 @@
 <head>
   <title>Slideshow Section</title>
   <style>
+
+.background-image-zoom {
+  animation: zoomAnimation 20s infinite alternate;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.social-media {
+  text-align: center;
+}
+
+/* Style for the social media icons */
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #555;
+}
+
+/* Example styles for different social media icons */
+.social-media .fa-facebook {
+  background-color: #3b5998;
+}
+
+.social-media .fa-twitter {
+  background-color: #1da1f2;
+}
+
+.social-media .fa-instagram {
+  background-color: #c13584;
+}
+
+.social-media .fa-linkedin {
+  background-color: #0077b5;
+}
+
     .slideshow {
       position: relative;
       width: 100%;
@@ -63,15 +117,15 @@
 <body>
   <div class="slideshow">
     <div class="slides">
-      <div class="slide">
+      <div class="slide background-image-zoom">
         <img src="https://loremflickr.com/640/360
         " alt="Slide 1">
       </div>
-      <div class="slide">
+      <div class="slide background-image-zoom">
         <img src="https://loremflickr.com/640/400
         " alt="Slide 2">
       </div>
-      <div class="slide">
+      <div class="slide background-image-zoom">
         <img src="https://loremflickr.com/640/410
         " alt="Slide 3">
       </div>
@@ -82,6 +136,38 @@
     <button onclick="prevSlide()">&#10094;</button>
     <button onclick="nextSlide()">&#10095;</button>
   </div>
+
+  <footer class="bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact</h3>
+          <ul class="list-unstyled">
+            <li>Email: info@example.com</li>
+            <li>Phone: +1 123 456789</li>
+            <li>Address: 123 Street, City, Country</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <script>
     function prevSlide() {
