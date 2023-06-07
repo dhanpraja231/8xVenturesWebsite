@@ -8,16 +8,18 @@
   <style>
     .navbar {
       background-color: #9fb5d6;
-      animation: mymove 5s infinite;
-      
+      animation: mymove 10s infinite;
     }
+  
     .navbar-toggler-icon{
         color: #ffffff;
     }
+    
 
     @keyframes mymove {
   from {background-color: #9fb5d6;}
-  to {background-color: #497dcb;}
+  50%{background-color: #7693be;}
+  to {background-color: #9fb5d6;}
 }
 
   </style>
@@ -29,8 +31,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
