@@ -194,6 +194,46 @@
     }
   }
 
+  /* Marquee css */
+
+.marquee-container {
+  position: relative;
+  background-color: white;
+      color: #fff;
+
+      overflow: hidden;
+      height: 100px; /* Adjust the height as needed */
+    }
+
+    .marquee-wrapper {
+      display: flex;
+      will-change: transform;
+      animation: marquee-scroll 20s infinite linear paused;
+      animation-play-state: paused;
+    }
+
+    .marquee-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .marquee-content h2 {
+     
+           font-size: 90px; /* Change the font size */
+      margin: 0 10px; /* Adjust the margin as needed */
+      color: #565659;
+    }
+
+    @keyframes marquee-scroll {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+
 
   </style>
   
@@ -312,6 +352,72 @@
         </div> -->
       </div>
     </div>
+
+
+<!--Marquee About Us-->
+
+<div class="marquee-container">
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      <h2>ABOUT&nbsp;US&nbsp;-</h2>
+      <h2>ABOUT&nbsp;US&nbsp;-</h2>
+      <h2>ABOUT&nbsp;US&nbsp;-</h2>
+      <h2>ABOUT&nbsp;US&nbsp;-</h2>
+      <h2>ABOUT&nbsp;US&nbsp;-</h2>
+      <h2>ABOUT&nbsp;US&nbsp;-</h2>
+
+      <!-- Add more content as needed -->
+    </div>
+  </div>
+</div>
+
+<script>
+  var marqueeWrapper = document.querySelector('.marquee-wrapper');
+  var marqueeContainer = document.querySelector('.marquee-container');
+  var marqueeScrollWidth = marqueeWrapper.scrollWidth;
+  var isScrolling = false;
+
+  window.addEventListener('wheel', function(event) {
+    if (!isScrolling) {
+      isScrolling = true;
+      marqueeWrapper.style.animationPlayState = 'running';
+    }
+
+    clearTimeout(scrollTimer);
+    var scrollTimer = setTimeout(function() {
+      isScrolling = false;
+      marqueeWrapper.style.animationPlayState = 'paused';
+    }, 250);
+
+    var scrollAmount = event.deltaY * 300; // to change the scroll speed
+      var containerWidth = marqueeContainer.offsetWidth;
+
+    if (
+      scrollAmount > marqueeContainer.offsetTop - containerWidth &&
+      scrollAmount < marqueeContainer.offsetTop + marqueeContainer.offsetHeight
+    ) {
+      var progress =
+        (scrollAmount - marqueeContainer.offsetTop + containerWidth) /
+        (marqueeContainer.offsetHeight + containerWidth);
+      var translateX = progress * (marqueeScrollWidth - containerWidth);
+      marqueeWrapper.style.transform = `translateX(${-translateX}px)`;
+    }
+  });
+</script>
+
+
+<!--END OF MARQUEE ABOUT US-->
+
+
+
+
+
+
+
+
+
+
+
     <hr>
     <footer class="bg-light">
       <div style="height: 20px;"></div>
@@ -427,6 +533,13 @@ function scrollHandler() {
 window.addEventListener('scroll', scrollHandler);
 
   </script>
+
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
