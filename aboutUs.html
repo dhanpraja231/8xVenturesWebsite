@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/faq.scss"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <!-- Page Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <meta name="keywords" content="">
+  
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/ImageAssets/8X Logo JPG.jpg">
+      <link rel="icon" type="image/png" sizes="32x32" href="/ImageAssets/8X Logo JPG.jpg">
+      <link rel="icon" type="image/png" sizes="16x16" href="/ImageAssets/8X Logo JPG.jpg">
+      <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      
+      <!-- Vendor CSS -->
+      <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  
+      <!-- Main CSS -->
+      <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="css/tile.css">
+  <title>8x ventures</title>
+  <style>
+
+    .navbar {
+      position: fixed;
+
+      left: 0;
+      width: 100%;
+      background-color: white;
+      transition: top 0.3s ease-in-out;
+    }
+
+    
+  
+    .navbar-toggler-icon{
+        color: #ffffff;
+    }
+
+    .nav-item{
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: larger;
+    }
+    
+    .pitch-button.nav-link.pitch-button{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    
+
+    .pitch-button{
+      background-color:#132949 ;
+      color: #ffffff;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 5px;
+      
+      
+    }
+
+    .nav-link.pitch-button:hover{
+      /* background-color: transparent; */
+      color:#92add8 ;
+    }
+
+    .nav-item{
+      margin: auto;
+    }
+    a.footer-link-text{
+      text-decoration: underline;
+      color: #565659;
+      font-size: medium;
+    }
+
+    .background-image-zoom {
+  animation: zoomAnimation 6s infinite alternate;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #555;
+}
+
+.social-media .fa-facebook {
+  background-color: #3b5998;
+}
+
+.social-media .fa-twitter {
+  background-color: #1da1f2;
+}
+
+.social-media .fa-instagram {
+  background-color: #c13584;
+}
+
+.social-media .fa-linkedin {
+  background-color: #0077b5;
+}
+.know-more-button{
+  border-color: #132949;
+  color: #132949;
+  background-color: transparent;
+}
+
+.know-more-button:hover{
+  background-color: #132949;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+		.titleMain {
+            animation: fadeInUp 1s ease-in-out;
+			opacity: 1;
+            text-align: center;
+            font-family: 'Barlow', sans-serif;
+            letter-spacing: 5px;
+            margin-top: 50px;
+            font-size: 80px;
+
+		}
+
+        .text-start {
+  font-size: 30px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+
+}
+.wwd{
+    animation: fadeInUp 1s ease-in-out;
+    font-size: 50px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+
+
+        .card1 {
+            animation: fadeInUp 1s ease-in-out;
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    
+    .card2 {
+            animation: fadeInUp 1s ease-in-out;
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card3 {
+            animation: fadeInUp 1s ease-in-out;
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: 'Rubik', sans-serif;
+  --font-serif: 'Cardo', serif;
+}
+
+
+
+
+
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card1 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 600px) {
+    height: 350px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+
+  &:nth-child(1):before {
+    background-image: url(taj-mahal.jpg);
+  }
+
+  &:nth-child(2):before {
+    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+
+  &:nth-child(3):before {
+    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+
+  &:nth-child(4):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+}
+
+
+
+
+.card2 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 600px) {
+    height: 350px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+
+  &:nth-child(1):before {
+    background-image: url(taj-mahal.jpg);
+  }
+
+  &:nth-child(2):before {
+    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+
+  &:nth-child(3):before {
+    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+
+  &:nth-child(4):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  &:nth-child(5):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  &:nth-child(6):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  &:nth-child(7):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+}
+
+
+.card3 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 600px) {
+    height: 350px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+
+  &:nth-child(1):before {
+    background-image: url(taj-mahal.jpg);
+  }
+
+  &:nth-child(2):before {
+    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+
+  &:nth-child(3):before {
+    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+
+  &:nth-child(4):before {
+    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+}
+
+
+
+
+
+
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+
+
+@media (hover: hover) and (min-width: 600px) {
+  .card1:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+  }
+
+  .card1:hover,
+  .card1:focus-within {
+    align-items: center;
+
+    &:before {
+      transform: translateY(-4%);
+    }
+    &:after {
+      transform: translateY(-50%);
+    }
+
+    .content {
+      transform: translateY(0);
+
+      > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+      }
+    }
+  }
+
+  .card1:focus-within {
+    &:before,
+    &:after,
+    .content,
+    .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+}
+
+
+
+
+
+@media (hover: hover) and (min-width: 600px) {
+  .card2:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+  }
+
+  .card2:hover,
+  .card2:focus-within {
+    align-items: center;
+
+    &:before {
+      transform: translateY(-4%);
+    }
+    &:after {
+      transform: translateY(-50%);
+    }
+
+    .content {
+      transform: translateY(0);
+
+      > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+      }
+    }
+  }
+
+  .card2:focus-within {
+    &:before,
+    &:after,
+    .content,
+    .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+}
+
+
+
+@media (hover: hover) and (min-width: 600px) {
+  .card3:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+  }
+
+  .card3:hover,
+  .card3:focus-within {
+    align-items: center;
+
+    &:before {
+      transform: translateY(-4%);
+    }
+    &:after {
+      transform: translateY(-50%);
+    }
+
+    .content {
+      transform: translateY(0);
+
+      > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+      }
+    }
+  }
+
+  .card3:focus-within {
+    &:before,
+    &:after,
+    .content,
+    .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+}
+
+.section1{
+    background-image: url(https://images.unsplash.com/photo-1583339824000-5afecfd41835?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80);
+
+
+      height: 100%;
+  
+      top: 0;
+      left: 0;
+      width: 100%;
+      animation: fadeInUp 1s ease-in-out;
+
+}
+.section2{
+    height: 100%;
+    animation: fadeInUp 1s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1583339824000-5afecfd41835?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80);
+}
+   
+.section3{
+    height: 100%;
+    animation: fadeInUp 1s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1583339824000-5afecfd41835?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80);
+
+}
+
+      
+
+
+        @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+  </style>
+  
+  <link rel="stylesheet" href="css/cube.css">
+
+</head>
+<body>
+
+    <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding-top:20px ; padding-bottom: 20px;">
+    <div class="container">
+      <a class="navbar-brand navbar-logo" href="#"><img src="/ImageAssets/8X Logo High Resolution.png" alt="Company logo" width="180px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="pitch-button nav-link " href="#">   Pitch   </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="height: 110px;background-color: transparent;"></div>
+  <!-- header end -->
+   
+  <!-- body of about us page -->
+
+
+<div class="aboutus_content">
+
+
+
+  <section class="titleSection">
+
+
+    <h1 class="titleMain">ABOUT US</h1>
+  
+          
+  </section>
+  
+  
+  
+      <h2 class="wwd">What we do</h2>
+  
+      <div class="m-4">
+          <p class="text-start"><em>We are a venture capital firm with a deep focus on Deep Tech. Our primary goal is to invest in and empower startups that have the potential to generate sustainable value.</em></p>
+      </div>
+      <section class="section1">
+      <h2 class="wwd">Our geographic focus </h2>
+                
+  </section>
+  
+      <main class="page-content">
+          <div class="card1">
+            <div class="content">
+              <h2 class="title">INDIA</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the
+                mountains</p>
+             
+            </div>
+          </div>
+      
+          <div class="card1">
+            <div class="content">
+              <h2 class="title">EUROPE</h2>
+              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+              
+            </div>
+          </div>
+      
+          <div class="card1">
+            <div class="content">
+              <h2 class="title">MENA</h2>
+              <p class="copy">It's the desert you've always dreamed of</p>
+        
+            </div>
+          </div>
+      
+          <div class="card1">
+            <div class="content">
+              <h2 class="title">SINGAPORE</h2>
+              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+        
+            </div>
+          </div>
+        </main>
+  
+  
+  
+  <section class="section2">
+  
+  
+  
+        <h2 class="wwd">Our sector focus </h2>
+  
+                  
+  </section>
+  
+        <main class="page-content">
+          <div class="card2">
+            <div class="content">
+              <h2 class="title">INDIA</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the
+                mountains</p>
+             
+            </div>
+          </div>
+      
+          <div class="card2">
+            <div class="content">
+              <h2 class="title">EUROPE</h2>
+              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+              
+            </div>
+          </div>
+      
+          <div class="card2">
+            <div class="content">
+              <h2 class="title">MENA</h2>
+              <p class="copy">It's the desert you've always dreamed of</p>
+        
+            </div>
+          </div>
+      
+          <div class="card2">
+            <div class="content">
+              <h2 class="title">SINGAPORE</h2>
+              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+        
+            </div>
+          </div>
+  
+          <div class="card2">
+              <div class="content">
+                <h2 class="title">MENA</h2>
+                <p class="copy">It's the desert you've always dreamed of</p>
+          
+              </div>
+            </div>
+  
+            <div class="card2">
+              <div class="content">
+                <h2 class="title">MENA</h2>
+                <p class="copy">It's the desert you've always dreamed of</p>
+          
+              </div>
+            </div>
+  
+            <div class="card2">
+              <div class="content">
+                <h2 class="title">MENA</h2>
+                <p class="copy">It's the desert you've always dreamed of</p>
+          
+              </div>
+            </div>
+  
+          
+        </main>
+  
+  
+        <section class="section3">
+  
+      
+  
+        <h2 class="wwd">Our technology focus </h2>
+  
+                  
+  </section>
+  
+        <main class="page-content">
+          <div class="card3">
+            <div class="content">
+              <h2 class="title">INDIA</h2>
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the
+                mountains</p>
+             
+            </div>
+          </div>
+      
+          <div class="card3">
+            <div class="content">
+              <h2 class="title">EUROPE</h2>
+              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+              
+            </div>
+          </div>
+      
+          <div class="card3">
+            <div class="content">
+              <h2 class="title">MENA</h2>
+              <p class="copy">It's the desert you've always dreamed of</p>
+        
+            </div>
+          </div>
+      
+          <div class="card3">
+            <div class="content">
+              <h2 class="title">SINGAPORE</h2>
+              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+        
+            </div>
+          </div>
+        </main>
+  
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+<div style="height: 60px;"></div>
+    <hr>
+    <footer class="bg-light">
+      <!-- <div style="height: 20px;"></div> -->
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md text-center" style="padding: 10px;">
+            <a href="#" class="footer-link-text">Home</a>
+          </div>
+          <div class="col-md  text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Portfolio</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Team</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Newsroom</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Global VC Database</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Thought Publications</a>
+          </div>
+          <div class="col-md text-center"style="padding: 10px;">
+            <a href="#" class="footer-link-text">Investor Login</a>
+          </div>
+        </div>
+        <div class="div" style="height: 20px;"></div>
+        <div class="social-media">
+          <!-- <a href="#" class="fa fa-facebook"></a> -->
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="div" style="height: 20px;"></div>
+        <div style="font-weight: bolder; text-align: center;">
+            8X Ventures
+        </div>
+        <div class="div" style="height: 20px;"></div>
+        <div style="text-align: center;">
+          Vision Tower - Al Khaleej Al Tejari 1 Street - Dubai - United Arab Emirates
+      </div>
+        <hr>
+        <div class="text-center">
+          <p>&copy; 2023 8x Ventures. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- footer end -->
+  
+  
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/2d28a88825.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html
