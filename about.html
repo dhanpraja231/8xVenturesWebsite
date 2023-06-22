@@ -28,105 +28,101 @@
   <title>8x ventures</title>
   <style>
 
-    .navbar {
-      position: fixed;
-      top: -100px;
-      left: 0;
-      width: 100%;
-      background-color: white;
-      transition: top 0.3s ease-in-out;
-    }
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  transition: top 0.3s ease-in-out;
+}
 
-    .navbar.navbar-scrolled {
-      top: 0px;
-    }
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+
+.nav-item{
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: larger;
+}
+
+.pitch-button.nav-link.pitch-button{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.splash{
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.splash.splash-scrolled{
+  opacity: 0;
+}
+
+.pitch-button{
+  background-color:#132949 ;
+  color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
   
-    .navbar-toggler-icon{
-        color: #ffffff;
-    }
+  
+}
 
-    .nav-item{
-      padding-left: 30px;
-      padding-right: 30px;
-      font-size: larger;
-    }
-    
-    .pitch-button.nav-link.pitch-button{
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+.nav-link.pitch-button:hover{
+  /* background-color: transparent; */
+  color:#92add8 ;
+}
 
-    .splash{
-      flex-direction: row;
-      flex: 1;
-      align-items: center;
-      justify-content: center;
-      margin-top: 250px;
-      text-align: center;
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-    }
+.nav-item{
+  margin: auto;
+}
 
-    .splash.splash-scrolled{
-      opacity: 0;
-    }
+.main-content{
+  opacity: 0;
+}
 
-    .pitch-button{
-      background-color:#132949 ;
-      color: #ffffff;
-      padding-left: 30px;
-      padding-right: 30px;
-      border-radius: 5px;
-      
-      
-    }
+.main-content.main-content-scrolled{
+  opacity: 1;
+}
 
-    .nav-link.pitch-button:hover{
-      /* background-color: transparent; */
-      color:#92add8 ;
-    }
+.slides{
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+.slide-title{
+  opacity: 0;
+  animation: appear 1.5s ease-in-out forwards;
+  font-size: xx-large;
+  font-weight: bold;
+  
+  color: #565659;
+}
+.slide-subtitle{
+  opacity: 0;
+  animation: appear 2.0s ease-in-out forwards;
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #565659;
+}
 
-    .nav-item{
-      margin: auto;
-    }
+a.footer-link-text{
+  text-decoration: underline;
+  color: #565659;
+  font-size: medium;
+}
 
-    .main-content{
-      opacity: 0;
-    }
-
-    .main-content.main-content-scrolled{
-      opacity: 1;
-    }
-
-    .slides{
-      flex:1;
-      justify-content: center;
-      align-items: center;
-    }
-    .slide-title{
-      opacity: 0;
-      animation: appear 1.5s ease-in-out forwards;
-      font-size: xx-large;
-      font-weight: bold;
-      
-      color: #565659;
-    }
-    .slide-subtitle{
-      opacity: 0;
-      animation: appear 2.0s ease-in-out forwards;
-      font-size: large;
-      padding-left: 20px;
-      padding-right: 20px;
-      color: #565659;
-    }
-
-    a.footer-link-text{
-      text-decoration: underline;
-      color: #565659;
-      font-size: medium;
-    }
-
-    .background-image-zoom {
+.background-image-zoom {
   animation: zoomAnimation 2s alternate;
 }
 
@@ -182,11 +178,6 @@
   }
 }
 
-/* Apply the animation to the text */
-.appearing-text {
-  
-}
-
 @keyframes zoomAnimation {
   0% {
     transform: scale(0.9);
@@ -220,55 +211,7 @@
     }
   }
 
-  /* Marquee css */
-
-.marquee-container {
-  position: relative;
-  background-color: white;
-      color: #fff;
-
-      overflow: hidden;
-      height: 100px; /* Adjust the height as needed */
-    }
-
-    .marquee-wrapper {
-      display: flex;
-      will-change: transform;
-      animation: marquee-scroll 20s infinite linear paused;
-      animation-play-state: paused;
-    }
-
-    .marquee-content {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .marquee-content h2 {
-     
-           font-size: 90px; /* Change the font size */
-      margin: 0 10px; /* Adjust the margin as needed */
-      color: #565659;
-    }
-
-    @keyframes marquee-scroll {
-      from {
-        transform: translateX(0%);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-    }
-    @media (max-width: 991.98px) {
-  .marquee-wrapper {
-    animation: none !important;
-    
-  }
-  .static-text {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
+ 
 
 .hero{
     background-color: #f8f8f8;
@@ -334,52 +277,13 @@
     margin:auto;
     animation: fadeInUp 2s ease;
 }
-img{
-    width:100%;
+.slide-img{
+    width:60%;
     height:auto;
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .heading h1{
-        font-size: 45px;
-        margin-top: 30px;
-    }
-    .hero{
-        margin: 0px;
-    }
-    .container{
-        width: 100%;
-        flex-direction: column;
-        margin: 0px;
-        padding: 0px 40px;
-    }
-    .hero-content{
-        width:100%;
-        margin:35px 0px;
-    }
-    .hero-content h2{
-       font-size: 30px;
-    }
-    .hero-content p{
-       font-size: 18px;
-       margin-bottom: 20px;
-    }
-    .hero-content-second{
-        width:100%;
-        margin:35px 0px;
-    }
-    .hero-content-second h2{
-       font-size: 30px;
-    }
-    .hero-content-second p{
-       font-size: 18px;
-       margin-bottom: 20px;
-    }
-    .hero-image{
-        width: 100%;
-    }
-}
+
 
 @keyframes fadeInUp {
     0%{
@@ -418,39 +322,75 @@ img{
 
     <!--please add navbar here :)-->
     <!--navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding-top:20px ; padding-bottom: 20px;">
+      <div class="container">
+        <a class="navbar-brand navbar-logo" href="#"><img src="/ImageAssets/8X Logo High Resolution.png" alt="Company logo" width="180px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="pitch-button nav-link " href="#">   Pitch   </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     
-    <!--navbar end-->
- 
-  <!--abaout us content-->
   
-<section class = "hero">
-    <div class = "heading">
-        <h1>About us</h1>
+    
+    <div style="height: 150px;"></div>
+
+    <div class="container">
+
+    
+   <div class="row g-5">
+      <div class="col-lg" style="text-align: center;">
+        <img src = "/ImageAssets/about_us_img2.jpg" class="slide-img">
+      </div>
+      <!-- <div style="height: 20px;"></div> -->
+      <div class="col-lg my-auto" style="text-align: center;">
+        <h2> What we do  </h2>
+        <p>lorem ipsum blah blah </p>
+      </div>
+   </div>
+   <div style="height: 30px;"></div>
+   <div class="row">
+    <div class="col-lg order-lg-1" style="text-align: center;">
+      <img src = "/ImageAssets/about_us_img2.jpg" class="slide-img">
     </div>
-    <div class = "container-for-aboutus">
-        <div class = "hero-content">
-            <h2> Lorem ipsum  </h2>
-            <p>lorem ipsum blah blah </p>
-        </div>
-        <div class="hero-image">
-            <img src = "/ImageAssets/about_us_buildings.jpg">
-        </div>
+    <div style="height: 20px;"></div>
+    <div class="col-lg order-lg-0 my-auto" style="text-align: center;">
+      <h2> What we do  </h2>
+      <p>lorem ipsum blah blah </p>
     </div>
-</section>
+    
+    
+  </div>
 
-
-  <!--abaout us content END-->
-
-   <!--abaout us content-->
+ </div>
   
-<section class = "hero">
+<!-- <section class = "hero">
     <div class = "heading">
      
     </div>
     <div class = "container-for-aboutus">
         <div class="hero-image">
-            <img src = "/ImageAssets/about_us_img2.jpg">
+            <img src = "/ImageAssets/about_us_img2.jpg" class="slide-img">
         </div>
         <div class = "hero-content-second">
             <h2> What we do  </h2>
@@ -458,7 +398,7 @@ img{
         </div>
        
     </div>
-</section>
+</section> -->
 
 
   <!--abaout us content END-->
@@ -549,8 +489,8 @@ img{
     window.addEventListener('scroll', function() {
       var navbar = document.querySelector('.navbar');
       var mainContent = document.querySelector('.main-content');
-      var scrolled = window.scrollY > 150;
-      navbar.classList.toggle('navbar-scrolled', scrolled);
+      var scrolled = window.scrollY > 0;
+      navbar.classList.toggle('navbar-scrolled', true);
       mainContent.classList.toggle('main-content-scrolled',scrolled)
     });
 
