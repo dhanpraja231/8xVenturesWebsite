@@ -1,0 +1,93 @@
+.navbar {
+    position: fixed;
+
+    left: 0;
+    width: 100%;
+    background-color: white;
+    transition: top 0.3s ease-in-out;
+  }
+
+  
+
+  .navbar-toggler-icon{
+      color: #ffffff;
+  }
+
+  .nav-item{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: larger;
+  }
+  
+  .pitch-button.nav-link.pitch-button{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  
+
+  .pitch-button{
+    background-color:#132949 ;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    
+    
+  }
+
+  .nav-link.pitch-button:hover{
+    /* background-color: transparent; */
+    color:#92add8 ;
+  }
+
+  .nav-item{
+    margin: auto;
+  }
+  a.footer-link-text{
+    text-decoration: underline;
+    color: #565659;
+    font-size: medium;
+  }
+
+  .background-image-zoom {
+animation: zoomAnimation 6s infinite alternate;
+}
+
+.social-media {
+text-align: center;
+}
+
+.social-media a {
+display: inline-block;
+margin: 0 5px;
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+background-color: #333;
+color: #fff;
+font-size: 20px;
+transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+background-color: #555;
+}
+
+.social-media .fa-facebook {
+background-color: #3b5998;
+}
+
+.social-media .fa-twitter {
+background-color: #1da1f2;
+}
+
+.social-media .fa-instagram {
+background-color: #c13584;
+}
+
+.social-media .fa-linkedin {
+background-color: #0077b5;
+}
