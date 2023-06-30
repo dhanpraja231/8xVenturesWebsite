@@ -114,32 +114,36 @@
     -webkit-transform-style:preserve-3d;
             transform-style:preserve-3d;
     -webkit-animation:rotate 10s infinite ease-in-out;
-            animation:rotate 6s infinite ease-in-out;
+            animation:rotate 10s infinite ease-in-out;
     
   }
   .side{
+    border: 1px solid black;
     position:fixed;
-    display:block;
+    display:flex;
+    align-items: center;
     height:200px;
     width:200px;
   }
   .side1{
     background:#41C3AC;
+    background:whitesmoke;
     -webkit-transform:translateZ(100px);
             transform:translateZ(100px);
   }
   .side2{
     background:#FF884D;
+    background:rgb(16, 18, 86);
     -webkit-transform:rotateY(90deg) translateZ(100px);
             transform:rotateY(90deg) translateZ(100px);
   }
   .side3{
-    background:#32526E;
+    background:#41C3AC;
     -webkit-transform:rotateY(180deg) translateZ(100px);
             transform:rotateY(180deg) translateZ(100px);
   }
   .side4{
-    background:#65A2C5;
+    background:black;
     -webkit-transform:rotateY(-90deg) translateZ(100px);
             transform:rotateY(-90deg) translateZ(100px);
   }

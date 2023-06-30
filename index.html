@@ -229,63 +229,12 @@
     }
   }
 
-  /* Marquee css */
-
-.marquee-container {
-  position: relative;
-  /* background-color: white;
-      color: #fff; */
-
-      overflow: hidden;
-      height: 100px; /* Adjust the height as needed */
+  @media only screen and (max-width: 1000px) and (min-width: 760px) {
+    .adjust-text{
+      padding-top: 30px;
+      /* background-color: #0077b5; */
     }
-
-    .marquee-wrapper {
-      display: flex;
-      will-change: transform;
-      animation: marquee-scroll 20s infinite linear paused;
-      animation-play-state: paused;
-    }
-
-    .marquee-content {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .marquee-content h2 {
-     
-           font-size: 60px; /* Change the font size */
-      margin: 0 10px; /* Adjust the margin as needed */
-      color: #565659;
-    }
-
-    @keyframes marquee-scroll {
-      from {
-        transform: translateX(0%);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-    }
-    @media (max-width: 991.98px) {
-  .marquee-wrapper {
-    animation: none !important;
-    
   }
-  .static-text {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-
-
-
-
-
-    
-
 
 
   </style>
@@ -320,7 +269,7 @@
             <a class="nav-link" href="team.html">Team</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Blog</a>
           </li>
           <li class="nav-item">
             <a class="pitch-button nav-link " href="#">   Pitch   </a>
@@ -357,8 +306,7 @@
       <div class="slide">
         <div class="row">
           <div class="col-md text-center background-image-zoom">
-            <img src="/ImageAssets/Innovate.jpg
-            " alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 100%;height: 450px;">
+            <img src="/ImageAssets/complexmacbine3.png" alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 70%;height: 450px;">
           </div>
           <div class="col-md text-center my-auto">
               <div class="slide-title">
@@ -370,16 +318,15 @@
                 We bet on cutting-edge innovations at the forefront of scientific and technological
 breakthroughs.
               </div>
-            </div>
           </div>
         </div>
       </div>
+      
 
       <div class="slide">
         <div class="row">
           <div class="col-md text-center background-image-zoom">
-            <img src="/ImageAssets/lightbulbv2.png
-            " alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 100%;height: 450px; ">
+            <img src="/ImageAssets/lightbulbv2-removebg.png" alt="Slide 1"  style="object-fit:cover; width: 60%;height: 450px; ">
             
           </div>
           <div class="col-md text-center my-auto">
@@ -394,14 +341,13 @@ breakthroughs.
               </div>
             </div>
           </div>
-        </div>
       </div>
+      
 
       <div class="slide">
         <div class="row">
           <div class="col-md text-center background-image-zoom">
-            <img src="/ImageAssets/Liftoff.jpg
-            " alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 100%;height: 450px;">
+            <img src="/ImageAssets/rocket2.png" alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 100%;height: 450px;">
           </div>
           <div class="col-md text-center my-auto">
               <div class="slide-title">
@@ -414,14 +360,14 @@ breakthroughs.
               </div>
             </div>
           </div>
-        </div>
       </div>
+      
 
       <div class="slide">
         <div class="row">
           <div class="col-md text-center background-image-zoom">
             <img src="/ImageAssets/moneyHouse.jpg
-            " alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 100%;height: 450px;">
+            " alt="Slide 1"  style="object-fit:cover;object-position: 30% 150; width: 90%;height: 450px;">
           </div>
           <div class="col-md text-center my-auto">
               <div class="slide-title">
@@ -438,7 +384,7 @@ breakthroughs.
 
 
     </div>
-  </div>
+  
 
   <div style="height: 30px;"></div>
 
@@ -515,7 +461,7 @@ breakthroughs.
 <div style="height: 30px;"></div>
 <div class="container">
   <div class="row g-md-5" >
-    <div class="col-lg my-auto " style="padding-left: 30px;
+    <div class="col-lg my-auto adjust-text " style="padding-left: 30px;
     padding-right: 30px; text-align: center;
      font-size: large; color: #565659;
      animation: appear 5.0s ease-in-out alternate;">
@@ -531,12 +477,25 @@ We are keen to bring technology to society, which is why our fund has a strong s
     <div class="col-lg">
       <div class="cube-container">
         <div class="cube">
-          <div class="side side1"></div>
-          <div class="side side2"></div>
-          <div class="side side3"></div>
-          <div class="side side4"></div>
-          <div class="side side5"></div>
-          <div class="side side6"></div>
+          <div class="side side1">
+            <img src="ImageAssets/8X Logo High Resolution.png" width="200px" style="padding: 20px;">
+          </div>
+          <div class="side side2">
+            <img src="ImageAssets/startups/courseplay.png" width="200px" style="padding: 20px;">
+          </div>
+          <div class="side side3">
+            <img src="ImageAssets/startups/oditly.png" width="200px" style="padding: 20px;">
+          </div>
+          <div class="side side4">
+            <img src="ImageAssets/startups/medisim.png" width="200px" style="padding: 20px;">
+          </div>
+          <div class="side side5">
+            <img src="ImageAssets/startups/solinas.svg" width="200px" style="padding: 20px;">
+          </div>
+          <div class="side side6">
+            <img src="ImageAssets/startups/joinsub.png" width="200px" style="padding: 20px;">
+
+          </div>
         </div>
       </div>
     </div>
