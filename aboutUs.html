@@ -27,906 +27,228 @@
       <!-- Main CSS -->
       <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
   <link rel="stylesheet" href="css/tile.css">
+  <link rel="stylesheet" href="css/navbarFooter.css">
   <title>8x ventures</title>
-  <style>
 
-    .navbar {
-      position: fixed;
-
-      left: 0;
-      width: 100%;
-      background-color: white;
-      transition: top 0.3s ease-in-out;
-    }
-
-    
-  
-    .navbar-toggler-icon{
-        color: #ffffff;
-    }
-
-    .nav-item{
-      padding-left: 30px;
-      padding-right: 30px;
-      font-size: larger;
-    }
-    
-    .pitch-button.nav-link.pitch-button{
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    
-
-    .pitch-button{
-      background-color:#132949 ;
-      color: #ffffff;
-      padding-left: 30px;
-      padding-right: 30px;
-      border-radius: 5px;
-      
-      
-    }
-
-    .nav-link.pitch-button:hover{
-      /* background-color: transparent; */
-      color:#92add8 ;
-    }
-
-    .nav-item{
-      margin: auto;
-    }
-    a.footer-link-text{
-      text-decoration: underline;
-      color: #565659;
-      font-size: medium;
-    }
-
-    .background-image-zoom {
-  animation: zoomAnimation 6s infinite alternate;
-}
-
-.social-media {
-  text-align: center;
-}
-
-.social-media a {
-  display: inline-block;
-  margin: 0 5px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #333;
-  color: #fff;
-  font-size: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.social-media a:hover {
-  background-color: #555;
-}
-
-.social-media .fa-facebook {
-  background-color: #3b5998;
-}
-
-.social-media .fa-twitter {
-  background-color: #1da1f2;
-}
-
-.social-media .fa-instagram {
-  background-color: #c13584;
-}
-
-.social-media .fa-linkedin {
-  background-color: #0077b5;
-}
-.know-more-button{
-  border-color: #132949;
-  color: #132949;
-  background-color: transparent;
-}
-
-.know-more-button:hover{
-  background-color: #132949;
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-		.titleMain {
-            animation: fadeInUp 1s ease-in-out;
-			opacity: 1;
-            text-align: center;
-            font-family: 'Barlow', sans-serif;
-            letter-spacing: 5px;
-            margin-top: 50px;
-            font-size: 50px;
-            color: #336;
-
-		}
-
-   
-
-        .text-start {
-  font-size: 20px;
-  color: #555;
-
-  animation: fadeInUp 1s ease-in-out;
-
-}
-.wwd{
-  box-shadow: 0 0 5px 0 ;
-     background-color: #132949;
-     margin: 50px;
-    animation: fadeInUp 1s ease-in-out;
-    font-size: 40px;
-    font-family: 'Barlow', sans-serif;
-   text-align: center;
-   color: #fff;
-   letter-spacing: 5px;
-   backdrop-filter: blur(10px);
-}
-
-
-        .card1 {
-            animation: fadeInUp 1s ease-in-out;
-      width: 300px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    
-    
-    .card2 {
-            animation: fadeInUp 1s ease-in-out;
-      width: 300px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .card3 {
-            animation: fadeInUp 1s ease-in-out;
-      width: 300px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-
-
-    @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
-
-:root {
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: 'Rubik', sans-serif;
-  --font-serif: 'Cardo', serif;
-}
-
-
-
-
-
-
-.page-content {
-  display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
-  max-width: 1024px;
-  margin: 0 auto;
-  font-family: var(--font-sans);
-}
-
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.card1 {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  color: whitesmoke;
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-
-  @media (min-width: 600px) {
-    height: 350px;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    background-size: cover;
-    background-position: 0 0;
-    transition: transform calc(var(--d) * 1.5) var(--e);
-    pointer-events: none;
-  }
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    pointer-events: none;
-    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
-    transform: translateY(-50%);
-    transition: transform calc(var(--d) * 2) var(--e);
-  }
-
-  &:nth-child(1):before {
-    background-image: url(taj-mahal.jpg);
-  }
-
-  &:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-
-  &:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-
-  &:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-}
-
-
-
-
-.card2 {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  color: whitesmoke;
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-
-  @media (min-width: 600px) {
-    height: 350px;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    background-size: cover;
-    background-position: 0 0;
-    transition: transform calc(var(--d) * 1.5) var(--e);
-    pointer-events: none;
-  }
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    pointer-events: none;
-    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
-    transform: translateY(-50%);
-    transition: transform calc(var(--d) * 2) var(--e);
-  }
-
-  &:nth-child(1):before {
-    background-image: url(taj-mahal.jpg);
-  }
-
-  &:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-
-  &:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-
-  &:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-  &:nth-child(5):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-  &:nth-child(6):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-  &:nth-child(7):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-}
-
-
-.card3 {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  color: whitesmoke;
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-
-  @media (min-width: 600px) {
-    height: 350px;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    background-size: cover;
-    background-position: 0 0;
-    transition: transform calc(var(--d) * 1.5) var(--e);
-    pointer-events: none;
-  }
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    pointer-events: none;
-    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
-    transform: translateY(-50%);
-    transition: transform calc(var(--d) * 2) var(--e);
-  }
-
-  &:nth-child(1):before {
-    background-image: url(taj-mahal.jpg);
-  }
-
-  &:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-
-  &:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-
-  &:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  }
-}
-
-
-
-
-
-
-
-.content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-  transition: transform var(--d) var(--e);
-  z-index: 1;
-
-  > * + * {
-    margin-top: 1rem;
-  }
-}
-
-.title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.copy {
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  font-style: italic;
-  line-height: 1.35;
-}
-
-
-
-@media (hover: hover) and (min-width: 600px) {
-  .card1:after {
-    transform: translateY(0);
-  }
-
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-
-    > *:not(.title) {
-      opacity: 0;
-      transform: translateY(1rem);
-      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-    }
-  }
-
-  .card1:hover,
-  .card1:focus-within {
-    align-items: center;
-
-    &:before {
-      transform: translateY(-4%);
-    }
-    &:after {
-      transform: translateY(-50%);
-    }
-
-    .content {
-      transform: translateY(0);
-
-      > *:not(.title) {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: calc(var(--d) / 8);
-      }
-    }
-  }
-
-  .card1:focus-within {
-    &:before,
-    &:after,
-    .content,
-    .content > *:not(.title) {
-      transition-duration: 0s;
-    }
-  }
-}
-
-
-
-
-
-@media (hover: hover) and (min-width: 600px) {
-  .card2:after {
-    transform: translateY(0);
-  }
-
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-
-    > *:not(.title) {
-      opacity: 0;
-      transform: translateY(1rem);
-      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-    }
-  }
-
-  .card2:hover,
-  .card2:focus-within {
-    align-items: center;
-
-    &:before {
-      transform: translateY(-4%);
-    }
-    &:after {
-      transform: translateY(-50%);
-    }
-
-    .content {
-      transform: translateY(0);
-
-      > *:not(.title) {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: calc(var(--d) / 8);
-      }
-    }
-  }
-
-  .card2:focus-within {
-    &:before,
-    &:after,
-    .content,
-    .content > *:not(.title) {
-      transition-duration: 0s;
-    }
-  }
-}
-
-
-
-@media (hover: hover) and (min-width: 600px) {
-  .card3:after {
-    transform: translateY(0);
-  }
-
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-
-    > *:not(.title) {
-      opacity: 0;
-      transform: translateY(1rem);
-      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-    }
-  }
-
-  .card3:hover,
-  .card3:focus-within {
-    align-items: center;
-
-    &:before {
-      transform: translateY(-4%);
-    }
-    &:after {
-      transform: translateY(-50%);
-    }
-
-    .content {
-      transform: translateY(0);
-
-      > *:not(.title) {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: calc(var(--d) / 8);
-      }
-    }
-  }
-
-  .card3:focus-within {
-    &:before,
-    &:after,
-    .content,
-    .content > *:not(.title) {
-      transition-duration: 0s;
-    }
-  }
-}
-
-.section1{
-
-
-      height: 100%;
-  
-      top: 0;
-      left: 0;
-      width: 100%;
-      animation: fadeInUp 1s ease-in-out;
-
-}
-.section2{
-    height: 100%;
-    animation: fadeInUp 1s ease-in-out;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-   
-.section3{
-    height: 100%;
-    animation: fadeInUp 1s ease-in-out;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-}
-
-      
-
-
-        @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-
-
-  </style>
   
   <link rel="stylesheet" href="css/cube.css">
 
+
+
+
+
+
+<style>
+@keyframes fadeInUpRL {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUpLR {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+}
+
+
+
+.parent-slide{
+  display: flex;
+  flex-direction: column;
+}
+
+.slides{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  color: #336;
+
+  
+ 
+  
+}
+
+.slides img{
+  width: 350px;
+  animation: fadeInUpRL 15s forwards;
+
+}
+
+.slides h2{
+  text-align: left;
+  animation: fadeInUpLR 15s forwards;
+  font-size: 70px;
+  color: #336;
+  z-index: 1;
+}
+.description{
+  text-align: justify;
+ font-size: 30px;
+padding-right: 200px;
+padding-left: 200px;
+
+  color: grey;
+}
+
+.slide-1{
+  background: linear-gradient(454deg,#F2F3F2,white);
+  height: 30vh;
+  
+}
+
+
+
+
+
+   /* Laptop styles */
+   @media only screen and (min-width: 1200px) {
+      /* Add CSS properties specific to laptops here */
+    }
+
+    /* Tablet styles */
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      .slides{
+        gap: 100px;
+      }
+      .slides h2{
+        font-size: 70px;
+      }
+      .description{
+        font-size: 20px;
+      }
+
+     
+      /* Add CSS properties specific to tablets here */
+    }
+
+    /* Mobile styles */
+    @media only screen and (max-width: 767px) {
+      /* Add CSS properties specific to mobile devices here */
+
+      .slides{
+        gap: 55px;
+      }
+      .slides h2{
+        font-size: 50px;
+        
+      }
+      .description{
+        font-size: 20px;
+        padding-right: 20px;
+padding-left: 20px;
+      }
+
+      .slide-1{
+        padding-left: 30px;
+      }
+      .slides img{
+        width: 325px;
+      }
+    }
+
+
+
+
+
+</style>
 </head>
 <body>
 
     <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding-top:20px ; padding-bottom: 20px;">
-    <div class="container">
-      <a class="navbar-brand navbar-logo" href="index.html"><img src="/ImageAssets/8X Logo High Resolution.png" alt="Company logo" width="180px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link" href="aboutUs.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="pitch-button nav-link " href="#">   Pitch   </a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding-top:20px ; padding-bottom: 20px;">
+      <div class="container">
+        <a class="navbar-brand navbar-logo" href="index.html"><img src="/ImageAssets/8X Logo High Resolution.png" alt="Company logo" width="180px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="pitch-button nav-link " href="#">   Pitch   </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   <div style="height: 110px;background-color: transparent;"></div>
   <!-- header end -->
    
-  <!-- body of about us page -->
+  <!-- placeholder -->
 
 
-<div class="aboutus_content" style=" background-image: linear-gradient(transparent, #9cb9e7,transparent)">
+  <div class="slides slide-1">
+    <h2 >ABOUT US</h2>
+    <img src = "about-us.png" alt="about us clipart" >
 
+  </div>
+  <div class="description">
+    <p style="padding-top: 40px;"> We are a DeepTech Venture Capital Firm focusing on startups that will fundamentally transform industries and economies through a strong scientific and research foundation.
+     
+    </p>
+  </div>
 
+  <div class="slides slide-2">
+    <h2>WHO WE ARE</h2>
+    <img src = "who_we_are.png" alt="about us clipart">
+   
 
-  <section class="titleSection">
+  </div>
+  <div class="description">
+    <p> 
+      As a fund, we are firmly rooted in the DeepTech ecosystem to identify, invest, and strategically grow our portfolio companies through our strong domain expertise, fast-growing track record and extensive network (especially IITs).
+    </p>
+  </div>
 
-
-    <h1 class="titleMain">ABOUT US</h1>
-  
-          
-  </section>
-  
-  
-  
-      <h2 class="wwd">WHAT WE DO</h2>
-  
-      <div class="m-4" style="text-align: center;">
-          <p class="text-start" style="text-align: center;">
-            We are a DeepTech Venture Capital Firm focusing on startups that will fundamentally transform industries and economies through a strong scientific and research foundation.
-As a fund, we are firmly rooted in the DeepTech ecosystem to identify, invest, and strategically grow our portfolio companies through our strong domain expertise, fast-growing track record and extensive network (especially IITs).
-          </p>
-      </div>
-
-      <h2 class="wwd">WHY WE START</h2>
-  
-      <div class="m-4" style="text-align: center;">
-          <p class="text-start" style="text-align: center;">
-            
-Addressing larger problems will require technological disruption. We strive to solve the world's most critical societal and environmental challenges through disruptive innovation.
-Disruptive innovation necessitates a shift in customer usage, business model, and demonstrated performance. We aim to meaningfully influence this transition towards sustainability.
-</p>
-      </div>
-
-
-      <h2 class="wwd">HOW WE THINK</h2>
-  
-      <div class="m-4" style="text-align: center;">
-          <p class="text-start" style="text-align: center;">
-            Sustainable solutions are complex, interdisciplinary and require deep technical and market research. Capturing this value early enables us to strategically impact long-term outcomes.
-We believe that investing in these technologies in select sectors can make a real impact while generating high-risk-adjusted returns.
-</p>
-      </div>
-
-      
-
-
-      <section class="section1">
-      <h2 class="wwd">OUR GEOGRAPHIC FOCUS </h2>
-                
-  </section>
-  
-      <main class="page-content">
-          <div class="card1">
-            <div class="content">
-              <h2 class="title">INDIA</h2>
-              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the
-                mountains</p>
-             
-            </div>
-          </div>
-      
-          <div class="card1">
-            <div class="content">
-              <h2 class="title">EUROPE</h2>
-              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-              
-            </div>
-          </div>
-      
-          <div class="card1">
-            <div class="content">
-              <h2 class="title">MENA</h2>
-              <p class="copy">It's the desert you've always dreamed of</p>
-        
-            </div>
-          </div>
-      
-          <div class="card1">
-            <div class="content">
-              <h2 class="title">SINGAPORE</h2>
-              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
-        
-            </div>
-          </div>
-        </main>
-  
-  
-  
-  <section class="section2">
-  
-  
-  
-        <h2 class="wwd">OUR SECTOR FOCUS </h2>
-  
-                  
-  </section>
-  
-        <main class="page-content">
-          <div class="card2">
-            <div class="content">
-              <h2 class="title">INDIA</h2>
-              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the
-                mountains</p>
-             
-            </div>
-          </div>
-      
-          <div class="card2">
-            <div class="content">
-              <h2 class="title">EUROPE</h2>
-              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-              
-            </div>
-          </div>
-      
-          <div class="card2">
-            <div class="content">
-              <h2 class="title">MENA</h2>
-              <p class="copy">It's the desert you've always dreamed of</p>
-        
-            </div>
-          </div>
-      
-          <div class="card2">
-            <div class="content">
-              <h2 class="title">SINGAPORE</h2>
-              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
-        
-            </div>
-          </div>
-  
-          <div class="card2">
-              <div class="content">
-                <h2 class="title">MENA</h2>
-                <p class="copy">It's the desert you've always dreamed of</p>
-          
-              </div>
-            </div>
-  
-            <div class="card2">
-              <div class="content">
-                <h2 class="title">MENA</h2>
-                <p class="copy">It's the desert you've always dreamed of</p>
-          
-              </div>
-            </div>
-  
-            <div class="card2">
-              <div class="content">
-                <h2 class="title">MENA</h2>
-                <p class="copy">It's the desert you've always dreamed of</p>
-          
-              </div>
-            </div>
-  
-          
-        </main>
-  
-  
-        <section class="section3">
-  
-      
-  
-        <h2 class="wwd">OUR TECHNOLOGY FOCUS </h2>
-  
-                  
-  </section>
-  
-        <main class="page-content">
-          <div class="card3">
-            <div class="content">
-              <h2 class="title">INDIA</h2>
-              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the
-                mountains</p>
-             
-            </div>
-          </div>
-      
-          <div class="card3">
-            <div class="content">
-              <h2 class="title">EUROPE</h2>
-              <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-              
-            </div>
-          </div>
-      
-          <div class="card3">
-            <div class="content">
-              <h2 class="title">MENA</h2>
-              <p class="copy">It's the desert you've always dreamed of</p>
-        
-            </div>
-          </div>
-      
-          <div class="card3">
-            <div class="content">
-              <h2 class="title">SINGAPORE</h2>
-              <p class="copy">Seriously, straight up, just blast off into outer space today</p>
-        
-            </div>
-          </div>
-        </main>
+  <div class="slides slide-3">
+    <h2>WHY WE START</h2>
+ 
+    <img src = "why_we_start.png" alt="about us clipart">
   
 
+  </div>
+  <div class="description">
+    <p> Addressing larger problems will require technological disruption. We strive to solve the world's most critical societal and environmental challenges through disruptive innovation.
+      Disruptive innovation necessitates a shift in customer usage, business model, and demonstrated performance. We aim to meaningfully influence this transition towards sustainability.
+    </p>
+  </div>
 
+  <div class="slides slide-4">
+    <h2>HOW WE THINK</h2>
+    <img src = "how_we_think.png" alt="about us clipart">
+    
 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
+  <div class="description">
+    <p>Sustainable solutions are complex, interdisciplinary and require deep technical and market research. Capturing this value early enables us to strategically impact long-term outcomes.
+      We believe that investing in these technologies in select sectors can make a real impact while generating high-risk-adjusted returns.
+    </p>
+  </div>
 
 
 
